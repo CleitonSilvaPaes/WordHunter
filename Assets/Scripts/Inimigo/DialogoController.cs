@@ -32,7 +32,7 @@ public class DialogoController : MonoBehaviour {
                 falaAtiva = false;
                 painelDeDialogo.SetActive(false);
                 falaNPC.gameObject.SetActive(false);
-                FindObjectOfType<ControlePlayer>().velocidadePersonagem = 10;
+                FindObjectOfType<Player>().velocidadePersonagem = 10;
             }
         }
 	}

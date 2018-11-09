@@ -61,8 +61,8 @@ public class BossAtaque : MonoBehaviour {
     {
         if (colisor.gameObject.tag.Equals("Player"))
         {
-            var personagem = colisor.gameObject.GetComponent<PlayerHealth>();
-            personagem.TakeDamage(Random.Range(0,dano));
+            var personagem = colisor.gameObject.GetComponent<Player>();
+            personagem.ReceberDano(Random.Range(0,dano));
         }
     }
 }

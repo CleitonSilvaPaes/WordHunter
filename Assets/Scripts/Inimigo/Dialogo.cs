@@ -25,7 +25,7 @@ public class Dialogo : MonoBehaviour {
     {
         if (other.CompareTag("Player"))
         {
-            other.GetComponent<ControlePlayer>().velocidadePersonagem = 0;
+            other.GetComponent<Player>().velocidadePersonagem = 0;
             if (!dialogoConcluido)
             {
                 dialogoController.ProximaFala(falas[0]);

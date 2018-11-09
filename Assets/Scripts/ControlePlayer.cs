@@ -7,8 +7,6 @@ public class ControlePlayer : MonoBehaviour
 {
     private Rigidbody2D rBody;
 
-  
-
     private bool noChao = true;
    
     public bool seMovendo;
