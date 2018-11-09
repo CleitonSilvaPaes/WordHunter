@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5b759046caed042a9e33f9c034c871, type: 3}
+  m_Name: Pergunta23
+  m_EditorClassIdentifier: 
+  fala: "(PUC - SP-2007) A confus\xE3o era geral. No meio dela, Capitu olhou alguns
+    instantes para o cad\xE1ver t\xE3o fixa, t\xE3o apaixonadamente fixa, que n\xE3o
+    admira lhe saltassem algumas l\xE1grimas poucas e caladas... As minhas cessaram
+    logo. Fiquei a ver as dela; Capitu enxugou-as depressa, olhando a furto para a
+    gente que estava na sala. Redobrou de car\xEDcias para a amiga, e quis lev\xE1-la;
+    mas o cad\xE1ver parece que a tinha tamb\xE9m. Momento houve em que os olhos de
+    Capitu fitaram o defunto, quais os da vi\xFAva, sem o pranto nem palavras desta,
+    mas grandes e abertos, como a vaga do mar l\xE1 fora, como se quisesse tragar
+    tamb\xE9m o nadador da manh\xE3. O trecho acima, do romance Dom Casmurro de Machado
+    de Assis, autoriza o narrador a caracterizar os olhos da personagem, do ponto
+    de vista metaf\xF3rico, como"
+  resposta:
+  - resposta: "a) olhos de vi\xFAva obl\xEDqua e dissimulada, apaixonados pelo nadador
+      da manh\xE3."
+    proximaFala: {fileID: 0}
+  - resposta: "b) olhos de ressaca, pela for\xE7a que arrasta para dentro."
+    proximaFala: {fileID: 0}
+  - resposta: "c) olhos de bacante fria, pela irrecus\xE1vel sensualidade e sedu\xE7\xE3o
+      que provocam."
+    proximaFala: {fileID: 0}
+  - resposta: "d) olhos de primavera, pela cor que emanam e do\xE7ura que exalam."
+    proximaFala: {fileID: 0}
+  - resposta: "e) olhos oce\xE2nicos, pelo fluido misterioso e en\xE9rgico que envolvem."
+    proximaFala: {fileID: 0}

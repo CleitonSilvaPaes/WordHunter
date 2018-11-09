@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5b759046caed042a9e33f9c034c871, type: 3}
+  m_Name: Pergunta7
+  m_EditorClassIdentifier: 
+  fala: " (Faap-1997) \"Queria dizer aqui o fim do Quincas Borba, que adoeceu tamb\xE9m,
+    ganiu infinitamente, fugiu desvairado em busca do dono, e amanheceu morto na rua,
+    tr\xEAs dias depois. Mas, vendo a morte do c\xE3o narrada em cap\xEDtulo especial,
+    \xE9 prov\xE1vel que me perguntes se ele, se o seu defunto hom\xF4nimo \xE9 que
+    d\xE1 o t\xEDtulo ao livro, e por que antes um que outro, - quest\xE3o prenhe
+    de quest\xF5es, que nos levariam longe... Eia! chora os dous recentes mortos,
+    se tens l\xE1grimas. Se s\xF3 tens riso, ri-te! \xC9 a mesma cousa. O Cruzeiro,
+    que a linda Sofia n\xE3o quis fitar, como lhe pedia Rubi\xE3o, est\xE1 assaz alto
+    para n\xE3o discernir os risos e as l\xE1grimas dos homens.\" Machado de Assis
+    Machado de Assis filia-se (e o trecho \xE9 exemplo disso) ao estilo de \xE9poca
+    do:"
+  resposta:
+  - resposta: a) arcadismo
+    proximaFala: {fileID: 11400000, guid: 3da8dbfd6504707469b7b0958fe739ab, type: 2}
+  - resposta: b) romantismo
+    proximaFala: {fileID: 11400000, guid: 3da8dbfd6504707469b7b0958fe739ab, type: 2}
+  - resposta: c) realismo
+    proximaFala: {fileID: 11400000, guid: 73ca760bbc346c34098c6f791e9f9689, type: 2}
+  - resposta: d) simbolismo
+    proximaFala: {fileID: 11400000, guid: 3da8dbfd6504707469b7b0958fe739ab, type: 2}
+  - resposta: e) modernismo.
+    proximaFala: {fileID: 11400000, guid: 3da8dbfd6504707469b7b0958fe739ab, type: 2}

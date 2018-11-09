@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5b759046caed042a9e33f9c034c871, type: 3}
+  m_Name: Pergunta4
+  m_EditorClassIdentifier: 
+  fala: "(UEL-2007) Com base nos conhecimentos sobre a vinda da Miss\xE3o Art\xEDstica
+    Francesa ao Brasil (1816-1840), \xE9 correto afirmar:"
+  resposta:
+  - resposta: "a) O grupo de artistas franceses congregou esfor\xE7os para fortalecer
+      os rumos da arte colonial brasileira e desenvolver tem\xE1ticas relativas ao
+      nacionalismo, destacando, especialmente, her\xF3is da nossa hist\xF3ria.\_"
+    proximaFala: {fileID: 0}
+  - resposta: "b) Afastados da mentalidade elitista da Corte instalada no Brasil,
+      os artistas franceses, especialmente os arquitetos como Granjean de Montigny,
+      ressaltar\xE3o os tra\xE7os populares ou nativistas das constru\xE7\xF5es.\_"
+    proximaFala: {fileID: 0}
+  - resposta: "c) A contrata\xE7\xE3o de uma miss\xE3o de artistas franceses, como
+      Nicolas Antoine Taunay e Jean Baptiste Debret, trouxe para o ambiente brasileiro
+      as doutrinas est\xE9ticas e os conceitos art\xEDsticos de origem religiosa e
+      barroca."
+    proximaFala: {fileID: 0}
+  - resposta: "d) Os artistas rec\xE9m-chegados eram renomados no ambiente art\xEDstico
+      europeu e souberam moldar seus disc\xEDpulos, como Ara\xFAjo Porto Alegre, para
+      um formalismo indiferente \xE0 realidade brasileira."
+    proximaFala: {fileID: 0}
+  - resposta: "e) O prolongamento, at\xE9 o per\xEDodo republicano, de uma expans\xE3o
+      acad\xEAmica da pintura, aproximou os artistas franceses e brasileiros, influenciados
+      pelos debates ocorridos na Europa dos movimentos rom\xE2ntico e impressionista.\_"
+    proximaFala: {fileID: 0}

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5b759046caed042a9e33f9c034c871, type: 3}
+  m_Name: Pergunta12
+  m_EditorClassIdentifier: 
+  fala: "(UEPB-2006) Sobre O corti\xE7o e O alienista N\xC3O \xE9 correto afirmar
+    que:"
+  resposta:
+  - resposta: "a) S\xE3o textos liter\xE1rios que demonstram criticamente os impasses
+      da modernidade nascente no Brasil, suas contradi\xE7\xF5es e suas problem\xE1ticas
+      rela\xE7\xF5es de classe e poder. "
+    proximaFala: {fileID: 0}
+  - resposta: "b) Representam um olhar ainda dependente das verdades cient\xEDficas
+      e intelectuais vindas da Europa, sobretudo da Fran\xE7a, por isso s\xE3o obras
+      secund\xE1rias de seus autores, que s\xF3 posteriormente alcan\xE7ariam a \u201Cmaioridade\u201D
+      liter\xE1ria."
+    proximaFala: {fileID: 0}
+  - resposta: "c) Est\xE3o na alvorada de uma dimens\xE3o verdadeiramente cr\xEDtica
+      da literatura brasileira, n\xE3o se filiando servilmente aos padr\xF5es liter\xE1rios,
+      e pol\xEDticos, impostos pela Europa, nem tampouco ao idealismo ing\xEAnuo dos
+      rom\xE2nticos."
+    proximaFala: {fileID: 0}
+  - resposta: "d) Cada um a seu modo, n\xE3o se enquadram no pedantismo e na linguagem
+      bacharelesca de seus contempor\xE2neos. Lutam, ao contr\xE1rio, por uma l\xEDngua
+      portuguesa mais direta e menos artificial."
+    proximaFala: {fileID: 0}
+  - resposta: "e) S\xE3o exemplos do realismo internacional que tomou conta da literatura
+      do ocidente a partir da d\xE9cada de 1850, sem deixarem de ser autores inseridos
+      na problem\xE1tica especificamente brasileira do Rio de Janeiro da segunda metade
+      do s\xE9culo XIX. "
+    proximaFala: {fileID: 0}

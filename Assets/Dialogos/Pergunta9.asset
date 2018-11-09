@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5b759046caed042a9e33f9c034c871, type: 3}
+  m_Name: Pergunta9
+  m_EditorClassIdentifier: 
+  fala: "(FMTM-2003) Assinale a alternativa em que se encontram caracter\xEDsticas
+    da prosa do Realismo."
+  resposta:
+  - resposta: "a) Objetivismo; subordina\xE7\xE3o dos sentimentos a interesses sociais;
+      cr\xEDticas \xE0s institui\xE7\xF5es decadentes da sociedade burguesa."
+    proximaFala: {fileID: 11400000, guid: 73ca760bbc346c34098c6f791e9f9689, type: 2}
+  - resposta: "b) Idealiza\xE7\xE3o do her\xF3i; amor visto como reden\xE7\xE3o; oposi\xE7\xE3o
+      aos valores sociais."
+    proximaFala: {fileID: 11400000, guid: b8236cdfa7c8dd74eba59246f26cc56d, type: 2}
+  - resposta: "c) Casamento visto como arranjo de conveni\xEAncia; descri\xE7\xE3o
+      objetiva; idealiza\xE7\xE3o da mulher."
+    proximaFala: {fileID: 11400000, guid: b8236cdfa7c8dd74eba59246f26cc56d, type: 2}
+  - resposta: "d) Linguagem metaf\xF3rica; protagonista tratado como antiher\xF3i;
+      sentimentalismo."
+    proximaFala: {fileID: 11400000, guid: b8236cdfa7c8dd74eba59246f26cc56d, type: 2}
+  - resposta: "e) Esp\xEDrito de aventura; narrativa lenta; impasse amoroso solucionado
+      pelo final feliz"
+    proximaFala: {fileID: 11400000, guid: b8236cdfa7c8dd74eba59246f26cc56d, type: 2}

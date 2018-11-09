@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5b759046caed042a9e33f9c034c871, type: 3}
+  m_Name: Pergunta5
+  m_EditorClassIdentifier: 
+  fala: "(PUC-SP-2006) Nelson Rodrigues escreveu Vestido de Noiva e este texto acabou
+    sendo considerado a grande renova\xE7\xE3o da dramaturgia brasileira contempor\xE2nea.
+    O que d\xE1 originalidade e peso ao texto deste autor e sustenta o interesse da
+    pe\xE7a \xE9"
+  resposta:
+  - resposta: "a) o esquema narrativo simples, ou seja, o desastre, a tentativa de
+      salvar a protagonista Ala\xEDde, conseq\xFCente morte."
+    proximaFala: {fileID: 11400000, guid: 7f301b45a9f2afe489ca8588b10a4ff9, type: 2}
+  - resposta: "b) o diagn\xF3stico de uma realidade social terr\xEDvel, protagonizada
+      pela institui\xE7\xE3o familiar, cujas deforma\xE7\xF5es s\xE3o provocadas fundamentalmente
+      por atitudes repressivas."
+    proximaFala: {fileID: 11400000, guid: 7f301b45a9f2afe489ca8588b10a4ff9, type: 2}
+  - resposta: "c) o uso de diferentes planos para narrar os acontecimentos que d\xE3o
+      corpo ao texto, quais sejam o da mem\xF3ria, o da realidade e o da alucina\xE7\xE3o."
+    proximaFala: {fileID: 11400000, guid: 73ca760bbc346c34098c6f791e9f9689, type: 2}
+  - resposta: "d) o encontro imagin\xE1rio entre Ala\xEDde e Madame Clessi, simbolizado
+      nos conflitos sexuais e nas fantasias rom\xE2nticas de um amor entre uma prostituta
+      e um adolescente."
+    proximaFala: {fileID: 11400000, guid: 7f301b45a9f2afe489ca8588b10a4ff9, type: 2}
+  - resposta: "e) a absoluta independ\xEAncia entre os v\xE1rios planos da pe\xE7a,
+      justificada pela presen\xE7a marcante da realidade que proporciona conclus\xE3o
+      para a intriga."
+    proximaFala: {fileID: 11400000, guid: 7f301b45a9f2afe489ca8588b10a4ff9, type: 2}

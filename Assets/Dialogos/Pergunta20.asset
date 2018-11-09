@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5b759046caed042a9e33f9c034c871, type: 3}
+  m_Name: Pergunta20
+  m_EditorClassIdentifier: 
+  fala: (UEMG-2007) Assinale a alternativa em que se identificou CORRETAMENTE elementos
+    estruturais do romance Dom Casmurro.
+  resposta:
+  - resposta: "a) A obra apresenta um texto em terceira pessoa, em que o protagonista
+      central, Bentinho, \xE9 abandonado por Capitu, em virtude dos ci\xFAmes exagerados
+      desta."
+    proximaFala: {fileID: 0}
+  - resposta: "b) O narrador de primeira pessoa escreve o romance, buscando a ilus\xE3o
+      de resgatar o seu passado atrav\xE9s de sensa\xE7\xF5es revivenciadas no presente,
+      tentando explicar a sua \u201Ccasmurrice\u201D e, com ela, a sua pr\xF3pria
+      vida."
+    proximaFala: {fileID: 0}
+  - resposta: "c) O romance \xE9 narrado em primeira pessoa por D.Casmurro, que deseja
+      registrar, memorialisticamente, o seu passado glorioso e cheio de atos dignos
+      de serem revivenciados."
+    proximaFala: {fileID: 0}
+  - resposta: "d) A narra\xE7\xE3o do romance obedece ao \xFAnico prop\xF3sito de
+      registrar os momentos felizes de Bentinho, vivenciados ao lado de Capitu, o
+      que explica, em parte, a tend\xEAncia do narrador pelas min\xFAcias e pelo detalhismo."
+    proximaFala: {fileID: 0}

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5b759046caed042a9e33f9c034c871, type: 3}
+  m_Name: Pergunta16
+  m_EditorClassIdentifier: 
+  fala: "(ITA-1995) Assinale a alternativa em que se completa erradamente a seguinte
+    proposi\xE7\xE3o: Do romance O CORTI\xC7O pode-se dizer que:"
+  resposta:
+  - resposta: "a) \xE9 um romance urbano."
+    proximaFala: {fileID: 11400000, guid: 97944d7aed7383244ade13fee9d76d00, type: 2}
+  - resposta: "b) o Autor admite a influ\xEAncia do meio no comportamento do indiv\xEDduo."
+    proximaFala: {fileID: 11400000, guid: 97944d7aed7383244ade13fee9d76d00, type: 2}
+  - resposta: "c) alcan\xE7a a \xE9poca da escravid\xE3o."
+    proximaFala: {fileID: 11400000, guid: 97944d7aed7383244ade13fee9d76d00, type: 2}
+  - resposta: "d) Rom\xE3o \xE9 tudo, menos um ingrato."
+    proximaFala: {fileID: 11400000, guid: 73ca760bbc346c34098c6f791e9f9689, type: 2}
+  - resposta: "e) o protagonista n\xE3o se contenta com a ascens\xE3o econ\xF4mica,
+      quer a social tamb\xE9m."
+    proximaFala: {fileID: 11400000, guid: 97944d7aed7383244ade13fee9d76d00, type: 2}

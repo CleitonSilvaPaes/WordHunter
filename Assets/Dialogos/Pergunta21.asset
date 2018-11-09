@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5b759046caed042a9e33f9c034c871, type: 3}
+  m_Name: Pergunta21
+  m_EditorClassIdentifier: 
+  fala: "(UFMG-2007) Com base na leitura de Quincas Borba, de Machado de Assis, \xE9
+    CORRETO afirmar que o narrador do romance"
+  resposta:
+  - resposta: "a) adere ao ponto de vista do fil\xF3sofo, pois professa a teoria do
+      Humanitismo."
+    proximaFala: {fileID: 11400000, guid: 19fdf53f94500204d835e6f34452ee58, type: 2}
+  - resposta: "b) apela \xE0 sentimentalidade do leitor no \xFAltimo cap\xEDtulo,
+      em que narra a morte de Rubi\xE3o."
+    proximaFala: {fileID: 11400000, guid: 19fdf53f94500204d835e6f34452ee58, type: 2}
+  - resposta: c) apresenta os acontecimentos na mesma ordem em que estes se deram
+      no tempo.
+    proximaFala: {fileID: 11400000, guid: 19fdf53f94500204d835e6f34452ee58, type: 2}
+  - resposta: "d) narra a hist\xF3ria em terceira pessoa, n\xE3o participando das
+      a\xE7\xF5es como personagem."
+    proximaFala: {fileID: 11400000, guid: 73ca760bbc346c34098c6f791e9f9689, type: 2}

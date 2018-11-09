@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5b759046caed042a9e33f9c034c871, type: 3}
+  m_Name: Pergunta17
+  m_EditorClassIdentifier: 
+  fala: "(UEL-1995) Na obra-prima que \xE9 o romance O CORTI\xC7O,"
+  resposta:
+  - resposta: "a) podemos surpreender as caracter\xEDsticas b\xE1sicas da prosa rom\xE2ntica:
+      narrativa passional, tipos humanos idealizados, disputa entre o interesse material
+      e os sentimentos mais nobres."
+    proximaFala: {fileID: 11400000, guid: 3df70adcc2a5ad3489a7c3a45c226ee7, type: 2}
+  - resposta: "b) as personagens s\xE3o apresentadas sob o ponto de vista psicol\xF3gico,
+      desnudando-se ante os olhos do leitor gra\xE7as \xE0 delicada sutileza com que
+      o autor as analisa e expressa."
+    proximaFala: {fileID: 11400000, guid: 3df70adcc2a5ad3489a7c3a45c226ee7, type: 2}
+  - resposta: "c) o leitor \xE9 transportado ao doloroso universo dos miser\xE1veis
+      e oprimidos migrantes que, tangidos pela seca, abrigam-se em acomoda\xE7\xF5es
+      coletivas, \xE0 espera de uma oportunidade."
+    proximaFala: {fileID: 11400000, guid: 3df70adcc2a5ad3489a7c3a45c226ee7, type: 2}
+  - resposta: "d) vemos renascer, na d\xE9cada de 30 do nosso s\xE9culo, uma prosa
+      viril, de cunho regionalista, atenta \xE0s nossas mazelas sociais e capaz de
+      objetivar em estilo seco parte de nossa dura realidade."
+    proximaFala: {fileID: 11400000, guid: 3df70adcc2a5ad3489a7c3a45c226ee7, type: 2}
+  - resposta: "e) consagra-se entre n\xF3s a prosa naturalista, marcada pela associa\xE7\xE3o
+      direta entre meio e personagens e pelo estilo agressivo que est\xE1 a servi\xE7o
+      das teses deterministas da \xE9poca."
+    proximaFala: {fileID: 11400000, guid: 73ca760bbc346c34098c6f791e9f9689, type: 2}

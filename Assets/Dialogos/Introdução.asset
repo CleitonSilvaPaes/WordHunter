@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5b759046caed042a9e33f9c034c871, type: 3}
+  m_Name: "Introdu\xE7\xE3o"
+  m_EditorClassIdentifier: 
+  fala: Bem vindo ao WORD HUNTER!!   Clique para continuar
+  resposta:
+  - resposta: 'Bem vindo aventureiro!! '
+    proximaFala: {fileID: 11400000, guid: 5ac8caacf70830a45b8e48f0710b66a8, type: 2}
+  - resposta: "Meu nome \xE9 \u201CSir Roger Shingen\u201D, sou um guerreiro da vila
+      dos livros que tem a maior cole\xE7\xE3o liter\xE1ria de todo o planeta.  "
+    proximaFala: {fileID: 11400000, guid: 5ac8caacf70830a45b8e48f0710b66a8, type: 2}
+  - resposta: "Ou pelo menos tinha, at\xE9 que \u201CIvory Falk, O Erudito\u201D roubou
+      todas as obras liter\xE1rias que t\xEDnhamos em nossa cole\xE7\xE3o, pois como
+      dizem, conhecimento \xE9 poder e esse \xE9 o objetivo dele, se tornar o ser
+      mais poderoso que j\xE1 andou sobre a terra. "
+    proximaFala: {fileID: 11400000, guid: 5ac8caacf70830a45b8e48f0710b66a8, type: 2}
+  - resposta: "J\xE1 o nosso objetivo, \xE9 recuperar todo o conhecimento que nos
+      foi roubado e derrotar Ivory antes que ele fique poderoso demais para ser derrotado
+      por qualquer um! "
+    proximaFala: {fileID: 11400000, guid: 5ac8caacf70830a45b8e48f0710b66a8, type: 2}
+  - resposta: "Por\xE9m, nosso inimigo deixou v\xE1rias armadilhas e  seres que precisam
+      ser derrotados pelo caminho. "
+    proximaFala: {fileID: 11400000, guid: 5ac8caacf70830a45b8e48f0710b66a8, type: 2}
+  - resposta: 'Um grande perigo o aguarda pela frente.  '
+    proximaFala: {fileID: 11400000, guid: 5ac8caacf70830a45b8e48f0710b66a8, type: 2}
+  - resposta: "Tem certeza que est\xE1 pronto para isso? "
+    proximaFala: {fileID: 11400000, guid: 5ac8caacf70830a45b8e48f0710b66a8, type: 2}

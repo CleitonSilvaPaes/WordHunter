@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5b759046caed042a9e33f9c034c871, type: 3}
+  m_Name: Pergunta22
+  m_EditorClassIdentifier: 
+  fala: "(PUC - SP-2007) No romance Dom Casmurro, o narrador declara: \u201CO meu
+    fim evidente era atar as duas pontas da vida, e restaurar na velhice a adolesc\xEAncia\u201D.
+    Entre as duas pontas, desenvolve-se o enredo da obra. Assim, indique abaixo a
+    alternativa cujo conte\xFAdo n\xE3o condiz com o enredo machadiano."
+  resposta:
+  - resposta: "a) A hist\xF3ria envolve tr\xEAs personagens, Bentinho, Capitu e Escobar,
+      e tr\xEAs projetos, todos cortados quando pareciam atingir a realiza\xE7\xE3o."
+    proximaFala: {fileID: 0}
+  - resposta: "b) O enredo revela um romance da d\xFAvida, da solid\xE3o e da incomunicabilidade,
+      na busca do conhecimento da verdade interior de cada personagem."
+    proximaFala: {fileID: 0}
+  - resposta: "c) A narrativa estrutura-se ao redor do sentimento de ci\xFAme, numa
+      linha de ascens\xE3o de constru\xE7\xE3o de felicidade e de dispers\xE3o, com
+      a felicidade destru\xEDda."
+    proximaFala: {fileID: 0}
+  - resposta: "d) A narrativa se marca por digress\xF5es que chamam a aten\xE7\xE3o
+      para a inevitabilidade do que vai narrar, como o que ocorre na analogia da vida
+      com a \xF3pera e em que o narrador afirma \u201Ccantei um duo tern\xEDssimo,
+      depois um trio, depois um quattuor...\u201D"
+    proximaFala: {fileID: 0}
+  - resposta: "e) O enredo envolve um tri\xE2ngulo amoroso ap\xF3s o casamento e todas
+      as a\xE7\xF5es levam a crer na exist\xEAncia clara de um adult\xE9rio."
+    proximaFala: {fileID: 0}

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5b759046caed042a9e33f9c034c871, type: 3}
+  m_Name: Pergunta6
+  m_EditorClassIdentifier: 
+  fala: "(ITA-2002) Leia os seguintes versos: Mais claro e fino do que as finas pratas
+    O som da tua voz deliciava... Na dol\xEAncia velada das sonatas Como um perfume
+    a tudo perfumava. Era um som feito luz, eram volatas Em l\xE2nguida espiral que
+    iluminava, Brancas sonoridades de cascatas... Tanta harmonia melancolizava. (SOUZA,
+    Cruz e. \u201CCristais\u201D, in Obras completas.Rio de Janeiro: Nova Aguilar,
+    1995, p. 86.) Assinale a alternativa que re\xFAne as caracter\xEDsticas simbolistas
+    presentes no texto:"
+  resposta:
+  - resposta: "a) Sinestesia, alitera\xE7\xE3o, sugest\xE3o."
+    proximaFala: {fileID: 11400000, guid: 73ca760bbc346c34098c6f791e9f9689, type: 2}
+  - resposta: "b) Clareza, perfei\xE7\xE3o formal, objetividade."
+    proximaFala: {fileID: 11400000, guid: 8c7909527282efb47aae25d02bd77938, type: 2}
+  - resposta: "c) Alitera\xE7\xE3o, objetividade, ritmo constante."
+    proximaFala: {fileID: 11400000, guid: 8c7909527282efb47aae25d02bd77938, type: 2}
+  - resposta: "d) Perfei\xE7\xE3o formal, clareza, sinestesia."
+    proximaFala: {fileID: 11400000, guid: 8c7909527282efb47aae25d02bd77938, type: 2}
+  - resposta: "e) Perfei\xE7\xE3o formal, objetividade, sinestesia."
+    proximaFala: {fileID: 11400000, guid: 8c7909527282efb47aae25d02bd77938, type: 2}

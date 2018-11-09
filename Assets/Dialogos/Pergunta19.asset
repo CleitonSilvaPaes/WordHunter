@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5b759046caed042a9e33f9c034c871, type: 3}
+  m_Name: Pergunta19
+  m_EditorClassIdentifier: 
+  fala: "(UEMG-2007) Com rela\xE7\xE3o \xE0s t\xE9cnicas e estrat\xE9gias narrativas
+    adotadas na obra \u201CDOM CASMURRO\u201D , S\xD3 N\xC3O \xE9 CORRETO afirmar
+    que"
+  resposta:
+  - resposta: "a) o narrador estabelece di\xE1logos com um suposto \u2018leitor incluso\u2019."
+    proximaFala: {fileID: 0}
+  - resposta: "b) o texto apresenta rela\xE7\xF5es intertextuais com a tradi\xE7\xE3o
+      filos\xF3fica, art\xEDstica e liter\xE1ria."
+    proximaFala: {fileID: 0}
+  - resposta: "c) a narrativa cont\xE9m recursos metalingu\xEDsticos, sobretudo no
+      di\xE1logo narrador / leitor."
+    proximaFala: {fileID: 0}
+  - resposta: "d) o memorialismo da narrativa \xE9 comprometido com a fidelidade dos
+      fatos ocorridos."
+    proximaFala: {fileID: 0}

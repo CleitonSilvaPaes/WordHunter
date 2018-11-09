@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5b759046caed042a9e33f9c034c871, type: 3}
+  m_Name: Pergunta18
+  m_EditorClassIdentifier: 
+  fala: "(UFC-2007) Sobre as obras escolhidas, assinale a alternativa que cont\xE9m
+    a afirma\xE7\xE3o correta."
+  resposta:
+  - resposta: "a) A casa assemelha-se a O corti\xE7o, de Alu\xEDzio de Azevedo, quanto
+      ao tipo de narrador, simultaneamente personagem e espa\xE7o."
+    proximaFala: {fileID: 0}
+  - resposta: "b) A vinha dos esquecidos explora a tem\xE1tica do retirante nordestino
+      \xE0 semelhan\xE7a de Vidas secas, de Graciliano Ramos."
+    proximaFala: {fileID: 0}
+  - resposta: "c) A casa, A vinha dos esquecidos e Cord\xE9is e outros poemas procuram
+      desmistificar supersti\xE7\xF5es."
+    proximaFala: {fileID: 0}
+  - resposta: "d) A casa e Cord\xE9is e outros poemas t\xEAm em comum a explora\xE7\xE3o
+      de aspectos psicol\xF3gicos das personagens."
+    proximaFala: {fileID: 0}
+  - resposta: "e) A vinha dos esquecidos e Cord\xE9is e outros poemas apresentam personagens
+      cujos comportamentos s\xE3o explicados por causas sociais."
+    proximaFala: {fileID: 0}

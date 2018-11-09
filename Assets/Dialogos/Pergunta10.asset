@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5b759046caed042a9e33f9c034c871, type: 3}
+  m_Name: Pergunta10
+  m_EditorClassIdentifier: 
+  fala: "(ENEM-2001) No trecho abaixo, o narrador, ao descrever a personagem, critica
+    sutilmente um outro estilo de \xE9poca: o romantismo. \u201CNaquele tempo contava
+    apenas uns quinze ou dezesseis anos; era talvez a mais atrevida criatura da nossa
+    ra\xE7a, e, com certeza, a mais voluntariosa. N\xE3o digo que j\xE1 lhe coubesse
+    a primazia da beleza, entre as mocinhas do tempo, porque isto n\xE3o \xE9 romance,
+    em que o autor sobredoura a realidade e fecha os olhos \xE0s sardas e espinhas;
+    mas tamb\xE9m n\xE3o digo que lhe maculasse o rosto nenhuma sarda ou espinha,
+    n\xE3o. Era bonita, fresca, sa\xEDa das m\xE3os da natureza, cheia daquele feiti\xE7o,
+    prec\xE1rio e eterno, que o indiv\xEDduo passa a outro indiv\xEDduo, para os fins
+    secretos da cria\xE7\xE3o.\u201D ASSIS, Machado de. Mem\xF3rias P\xF3stumas de
+    Br\xE1s Cubas. Rio de Janeiro: Jackson,1957. A frase do texto em que se percebe
+    a cr\xEDtica do narrador ao romantismo est\xE1 transcrita na alternativa:"
+  resposta:
+  - resposta: "a) o autor sobredoura a realidade e fecha os olhos \xE0s sardas e espinhas
+      ..."
+    proximaFala: {fileID: 11400000, guid: 73ca760bbc346c34098c6f791e9f9689, type: 2}
+  - resposta: "b) ... era talvez a mais atrevida criatura da nossa ra\xE7a ..."
+    proximaFala: {fileID: 11400000, guid: d0e95676f7280184cb39b4026b437b84, type: 2}
+  - resposta: "c) Era bonita, fresca, sa\xEDa das m\xE3os da natureza, cheia daquele
+      feiti\xE7o, prec\xE1rio e eterno, ..."
+    proximaFala: {fileID: 11400000, guid: d0e95676f7280184cb39b4026b437b84, type: 2}
+  - resposta: d) Naquele tempo contava apenas uns quinze ou dezesseis anos ...
+    proximaFala: {fileID: 11400000, guid: d0e95676f7280184cb39b4026b437b84, type: 2}
+  - resposta: d) Naquele tempo contava apenas uns quinze ou dezesseis anos ...
+    proximaFala: {fileID: 11400000, guid: d0e95676f7280184cb39b4026b437b84, type: 2}

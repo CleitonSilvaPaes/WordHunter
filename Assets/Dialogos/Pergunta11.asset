@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5b759046caed042a9e33f9c034c871, type: 3}
+  m_Name: Pergunta11
+  m_EditorClassIdentifier: 
+  fala: "(ESPM-2006) O poeta franc\xEAs Charles Baudelaire, citado por Ferreira Gullar,
+    escreveu em \u201CAs Flores do Mal\u201D os famosos versos (traduzidos): Como
+    longos ecos que ao longe se confundem Em uma tenebrosa e profunda unidade, Vasta
+    como a noite e como a claridade, Os perfumes, as cores e os sons... Esses versos
+    traduzem algo de influ\xEAncia destacada na literatura brasileira nos fins do
+    s\xE9culo XIX. Trata-se da: "
+  resposta:
+  - resposta: "a) \u201Ctorre-de-marfim\u201D, lugar isolado e distante dos problemas
+      sociais e existenciais, para onde se refugiavam os parnasianos. "
+    proximaFala: {fileID: 0}
+  - resposta: "b) \u201Cteoria do Humanitismo\u201D, princ\xEDpio norteador das personagens
+      machadianas, no qual prevalece a lei do mais forte."
+    proximaFala: {fileID: 0}
+  - resposta: "c) \u201Cteoria das correspond\xEAncias\u201D, rela\xE7\xE3o entre
+      as diferentes esferas dos sentidos, ide\xE1rio t\xE3o fundamental aos simbolistas."
+    proximaFala: {fileID: 0}
+  - resposta: "d) \u201Cpoesia marianista\u201D, poemas de culto e exalta\xE7\xE3o
+      a Virgem Maria (figura que se confunde com a amada do poeta)."
+    proximaFala: {fileID: 0}
+  - resposta: "e) \u201Cpoesia pau-brasil\u201D, poesia de exporta\xE7\xE3o que resgata
+      o primitivismo cultural.\_"
+    proximaFala: {fileID: 0}
