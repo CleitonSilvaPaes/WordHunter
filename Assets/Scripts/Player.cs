@@ -63,7 +63,7 @@ public class Player : Character
 
     protected override void Atacar()
     {
-        animator.SetTrigger("ataquePersonagem");
+        _animacaoPersonagens.SetTrigger("ataquePersonagem");
         //VAI PEGAR TODOS OS INIMIGOS QUE ENTRAR NO RAIO DE ATAQUE DO PLAYER
         Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
         Collider2D[] bossToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsBoss);
@@ -103,15 +103,15 @@ public class Player : Character
             transform.position = new Vector3(transform.position.x, limiteMinimoY, 0);
 
         }
-        animator.SetBool("noChao", true
+        _animacaoPersonagens.SetBool("noChao", true
 );
         if (horizontal != 0 || vertical != 0)
         {
-            animator.SetBool("seMovendo", true);
+            _animacaoPersonagens.SetBool("seMovendo", true);
         }
         else
         {
-            animator.SetBool("seMovendo", false);
+            _animacaoPersonagens.SetBool("seMovendo", false);
 
         }
     }

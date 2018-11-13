@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public abstract class Character : MonoBehaviour {
-    public Animator animator;
+    public Animator _animacaoPersonagens;
     protected Rigidbody2D rBody;
     [Header("Vida")]
     public int startingHealth;

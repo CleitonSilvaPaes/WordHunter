@@ -1912,7 +1912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a77530d2b250b247873152533c9b00c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 332473136}
+  _animacaoPersonagens: {fileID: 0}
   startingHealth: 100
   currentHealth: 0
   healthSlider: {fileID: 1685945366}
@@ -2814,6 +2814,11 @@ RectTransform:
   m_AnchoredPosition: {x: -376.2, y: -88.30002}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &654810673 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95932367276727196, guid: 8d7531f74b3376e44ab85dc7297415c3,
+    type: 2}
+  m_PrefabInternal: {fileID: 802535492}
 --- !u!1 &685921907
 GameObject:
   m_ObjectHideFlags: 0
@@ -3393,6 +3398,22 @@ Prefab:
         type: 2}
       propertyPath: startingHealth
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747331087125230, guid: 8d7531f74b3376e44ab85dc7297415c3,
+        type: 2}
+      propertyPath: _animacaoPersonagen
+      value: 
+      objectReference: {fileID: 654810673}
+    - target: {fileID: 114747331087125230, guid: 8d7531f74b3376e44ab85dc7297415c3,
+        type: 2}
+      propertyPath: danoParticula
+      value: 
+      objectReference: {fileID: 1913292909022018, guid: 1bd821b480d1c7d408ce6e1749eb39f6,
+        type: 2}
+    - target: {fileID: 114747331087125230, guid: 8d7531f74b3376e44ab85dc7297415c3,
+        type: 2}
+      propertyPath: espera
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d7531f74b3376e44ab85dc7297415c3, type: 2}
