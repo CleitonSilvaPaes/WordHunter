@@ -1778,8 +1778,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 941901511
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 097737625e3c0e8419ccfffab34674a8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1912,7 +1912,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a77530d2b250b247873152533c9b00c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animacaoPersonagens: {fileID: 0}
+  _animacaoPersonagens: {fileID: 332473136}
+  ParticulaDeDano: {fileID: 1913292909022018, guid: 24d85f0f8da62b744ac278de405eb90c,
+    type: 2}
   startingHealth: 100
   currentHealth: 0
   healthSlider: {fileID: 1685945366}
@@ -3330,6 +3332,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 105994958}
     m_Modifications:
+    - target: {fileID: 114747331087125230, guid: 8d7531f74b3376e44ab85dc7297415c3,
+        type: 2}
+      propertyPath: items.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4276240880654160, guid: 8d7531f74b3376e44ab85dc7297415c3, type: 2}
       propertyPath: m_LocalPosition.x
       value: -11.01
@@ -3415,7 +3422,51 @@ Prefab:
       propertyPath: espera
       value: 0.2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114747331087125230, guid: 8d7531f74b3376e44ab85dc7297415c3,
+        type: 2}
+      propertyPath: _animacaoPersonagens
+      value: 
+      objectReference: {fileID: 654810673}
+    - target: {fileID: 114747331087125230, guid: 8d7531f74b3376e44ab85dc7297415c3,
+        type: 2}
+      propertyPath: startingHealth
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747331087125230, guid: 8d7531f74b3376e44ab85dc7297415c3,
+        type: 2}
+      propertyPath: healthSlider
+      value: 
+      objectReference: {fileID: 1360666443}
+    - target: {fileID: 114747331087125230, guid: 8d7531f74b3376e44ab85dc7297415c3,
+        type: 2}
+      propertyPath: dano
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747331087125230, guid: 8d7531f74b3376e44ab85dc7297415c3,
+        type: 2}
+      propertyPath: startTimeBtwAttack
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747331087125230, guid: 8d7531f74b3376e44ab85dc7297415c3,
+        type: 2}
+      propertyPath: items.Array.data[0]
+      value: 
+      objectReference: {fileID: 1692908025790734, guid: 8ba10abfdb430274a8da526b1d65ec45,
+        type: 2}
+    - target: {fileID: 212179827932968848, guid: 8d7531f74b3376e44ab85dc7297415c3,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114747331087125230, guid: 8d7531f74b3376e44ab85dc7297415c3,
+        type: 2}
+      propertyPath: ParticulaDeDano
+      value: 
+      objectReference: {fileID: 1913292909022018, guid: 1bd821b480d1c7d408ce6e1749eb39f6,
+        type: 2}
+    m_RemovedComponents:
+    - {fileID: 114117970620277606, guid: 8d7531f74b3376e44ab85dc7297415c3, type: 2}
+    - {fileID: 114090370020766828, guid: 8d7531f74b3376e44ab85dc7297415c3, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 8d7531f74b3376e44ab85dc7297415c3, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &803890941
@@ -6644,6 +6695,11 @@ Prefab:
       propertyPath: healthSlider
       value: 
       objectReference: {fileID: 1058741467}
+    - target: {fileID: 114731070104296206, guid: a09c773d5946cea40873e249087e6922,
+        type: 2}
+      propertyPath: startingHealth
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a09c773d5946cea40873e249087e6922, type: 2}
   m_IsPrefabAsset: 0

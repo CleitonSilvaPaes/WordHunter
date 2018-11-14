@@ -4,17 +4,15 @@ using UnityEngine;
 
 public class UseItem : MonoBehaviour {
 
-    PlayerHealth playerHealth;
-    private Transform playerPos;
-    PlayerAttack attackPlayer;
+    //private Transform playerPos;
+    Player player;
     public GameObject arma;
     public int vida;
     public int danoArma;
 	// Use this for initialization
 	void Start () {
-        playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
-        playerPos = GameObject.FindGameObjectWithTag("Player").transform;
-        attackPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAttack>();
+        //playerPos = GameObject.FindGameObjectWithTag("Player").transform;
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
 
     }
      
@@ -22,19 +20,19 @@ public class UseItem : MonoBehaviour {
     {
         if (gameObject.CompareTag("Item"))
         {
-            if(playerHealth.currentHealth < 100)
+            if(player.currentHealth < 100)
             {
-                playerHealth.currentHealth += vida;
-                if(playerHealth.currentHealth > 100)
+                player.currentHealth += vida;
+                if(player.currentHealth > 100)
                 {
-                    playerHealth.currentHealth = 100;
+                    player.currentHealth = 100;
                 }
                 Destroy(gameObject);
             }
         }else if (gameObject.CompareTag("Arma"))
         {
-            attackPlayer.AddDamage(danoArma);
-            Instantiate(arma, playerPos.position, arma.transform.rotation, playerPos.transform);
+            player.AdicionarDano(danoArma);
+            //Instantiate(arma, playerPos.position, arma.transform.rotation, playerPos.transform);
             Destroy(gameObject);
             //Destroy(arma);
         }

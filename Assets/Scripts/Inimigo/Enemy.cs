@@ -1,127 +1,199 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Enemy : MonoBehaviour {
+public class Enemy : Character
+{
+    [Header("Items que vai Jogar para Personagen")]
+    public GameObject[] items;
+    [Header("Velocidade")]
     public float speed = 3.5f;
+    [Header("Distancia que Fica parado perto do Player")]
     public float pararDePersigir;
+    [Header("Postos do Mapa que o Inimigo vai ficar")]
     public GameObject[] pontos;
-    public float espera = 10f;
-    bool loop = true;
+    [Header("RAIO DE ALCANCE DO INIMIGO")]
+    public float lookRadius = 6f;
     bool seMovendo = true;
-    float proxTempo = 0;
-    bool direita = false;
     int i = 0;
 
-    Transform target;
-    Animator animatorAi;
-    public float lookRadius = 6f;
-    EnemyHealth enemyHealth;
+    GameObject _personagen; 
+    bool playerInRange;
+    CapsuleCollider2D capsuleCollider;
+    Player player; // Referencia a vida do Personagem
+    float timer;
 
-	// Use this for initialization
-	void Start () {
-        //Pega a posicao do player
-        target = GameObject.FindGameObjectWithTag("Player").transform;
-        animatorAi = GetComponent<Animator>();
-        enemyHealth = FindObjectOfType(typeof(EnemyHealth)) as EnemyHealth;
+
+    void Awake()
+    {
+        _personagen = GameObject.FindGameObjectWithTag("Player");
+        player = _personagen.GetComponent<Player>();
+        capsuleCollider = GetComponent<CapsuleCollider2D>();
+        currentHealth = startingHealth;
+    }
+
+    private void Start()
+    {
         direita = false;
     }
 
-    // Update is called once per frame
-    void Update () {
-        if(enemyHealth.currentHealth <= 0)
+    private void Update()
+    {
+        if (currentHealth <= 0)
         {
             speed = 0;
             seMovendo = false;
         }
-        else
-            if(enemyHealth.currentHealth > 0)
+        else if(currentHealth > 0)
+        {
+            timer += Time.deltaTime;
+            Mover();
+            if (timer >= timeBtwAttack && playerInRange)
             {
+                Atacar();
+                player.ReceberDano(Random.Range(0, dano));
+            }
+        }
+    }
 
-                if (Vector2.Distance(target.position, transform.position) <= lookRadius && 
-                    Vector2.Distance(target.position, transform.position) > pararDePersigir)
-                {
-                    if(Vector2.Distance(target.position, transform.position) <= 0.8)
-                    {
-                        animatorAi.SetBool("isWalk", false);
-                        animatorAi.SetBool("isIdle", true);
-                        animatorAi.SetBool("isRun", false);
-                    }
-                    else {
-                        animatorAi.SetBool("isWalk", false);
-                        animatorAi.SetBool("isIdle", false);
-                        animatorAi.SetBool("isRun", true);
-                        speed = 6.9f;
-                        transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
-                        seMovendo = true;
-                        if (target.position.x < transform.position.x)
-                        {
-                            if (direita == true)
-                            {
-                                direita = false;
-                                Flip();
-                            }
-                        }
-                        else
-                        {
-                            if (direita == false)
-                            {
-                                direita = true;
-                                Flip();
-                            }
-                        }
-                    }
-                    
-                }   
-                else if (Vector2.Distance(target.position, transform.position) > lookRadius)
-                {
-                    if (Time.time >= proxTempo)
-                    {
-                        if (transform.position.x <= pontos[0].transform.position.x && direita == false)
-                        {
-                            direita = true;
-                            Flip();
-                        }
-                        else if (transform.position.x >= pontos[1].transform.position.x && direita == true)
-                        {
-                            direita = false;
-                            Flip();
-                        }
-                        seMovendo = true;
-                        movimenta();
-                    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject == _personagen)
+        {
+            // ... the player is in range.
+            playerInRange = true;
+        }
+    }
 
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject == _personagen)
+        {
+            // ... the player is in range.
+            playerInRange = false;
+        }
+    }
+
+    public override void ReceberDano(int ReceberDano) // Quanto de dano que vai levar dos ATAQUES DO PERSONAGEM
+    {
+        if(ParticulaDeDano != null)
+            Instantiate(ParticulaDeDano, transform.position, Quaternion.identity);
+        damaged = true;
+        currentHealth -= ReceberDano;
+        healthSlider.value = currentHealth;
+        if (currentHealth <= 0)
+        {
+            Morte();
+        }
+    }
+
+    protected override void Atacar()
+    {
+        timer = -2f;
+
+        if (player.currentHealth > 0)
+        {
+            _animacaoPersonagens.SetTrigger("ataque");
+        }
+    }
+
+    protected override void Morte()
+    {
+        isDead = true;
+
+        // Turn the collider into a trigger so shots can pass through it.
+        capsuleCollider.isTrigger = true;
+
+        if (items.Length > 0)
+        {
+            GameObject item = items[UnityEngine.Random.Range(0, items.Length)];
+            item.GetComponent<SpriteRenderer>().sortingOrder = 12;
+            Vector2 playerPos = new Vector2(_personagen.transform.position.x + 2, _personagen.transform.position.y);
+            Instantiate(item.transform, playerPos, Quaternion.identity);
+        }
+
+        // Tell the animator that the enemy is dead.
+        _animacaoPersonagens.SetTrigger("Dead");
+        Destroy(gameObject, 2f);
+    }
+
+    protected override void Mover()
+    {
+        if (Vector2.Distance(_personagen.transform.position, transform.position) <= lookRadius &&
+                     Vector2.Distance(_personagen.transform.position, transform.position) > pararDePersigir)
+        {
+            var distancia = _personagen.transform.position.x - transform.position.x;
+
+            if (Mathf.Abs(distancia) <= 0.9)
+            {
+                _animacaoPersonagens.SetBool("isWalk", false);
+                _animacaoPersonagens.SetBool("isIdle", true);
+                _animacaoPersonagens.SetBool("isRun", false);
+            }
+            else
+            {
+                _animacaoPersonagens.SetBool("isWalk", false);
+                _animacaoPersonagens.SetBool("isIdle", false);
+                _animacaoPersonagens.SetBool("isRun", true);
+                speed = 6.9f;
+                transform.position = Vector2.MoveTowards(transform.position, _personagen.transform.position, speed * Time.deltaTime);
+                seMovendo = true;
+                if (_personagen.transform.position.x < transform.position.x)
+                {
+                    if (direita == true)
+                    {
+                        direita = false;
+                        Flip();
+                    }
+                }
+                else
+                {
+                    if (direita == false)
+                    {
+                        direita = true;
+                        Flip();
+                    }
                 }
             }
-	}
 
-    private void movimenta()
-    {
-        if ((pontos.Length != 0) && (seMovendo))
+        }
+        else if (Vector2.Distance(_personagen.transform.position, transform.position) > lookRadius)
         {
-            speed = 3.5f;
-            transform.position = Vector2.MoveTowards(transform.position, pontos[i].transform.position,
-                speed * Time.deltaTime);
-            animatorAi.SetBool("isWalk", true);
-            animatorAi.SetBool("isIdle", false);
-            if (Mathf.Abs(pontos[i].transform.position.x - transform.position.x) <= 0.001f)
+            if (Time.time >= 0)
             {
-                i++;
-                animatorAi.SetBool("isIdle", true);
-                animatorAi.SetBool("isRun", false);
-                animatorAi.SetBool("isWalk", false);
-                proxTempo = Time.time + espera;
-                seMovendo = false;
+                if (transform.position.x <= pontos[0].transform.position.x && direita == false)
+                {
+                    direita = true;
+                    Flip();
+                }
+                else if (transform.position.x >= pontos[1].transform.position.x && direita == true)
+                {
+                    direita = false;
+                    Flip();
+                }
+                seMovendo = true;
+                if ((pontos.Length != 0) && (seMovendo))
+                {
+                    speed = 3.5f;
+                    transform.position = Vector2.MoveTowards(transform.position, pontos[i].transform.position,
+                        speed * Time.deltaTime);
+                    _animacaoPersonagens.SetBool("isWalk", true);
+                    _animacaoPersonagens.SetBool("isIdle", false);
+                    if (Mathf.Abs(pontos[i].transform.position.x - transform.position.x) <= 0.001f)
+                    {
+                        i++;
+                        _animacaoPersonagens.SetBool("isIdle", true);
+                        _animacaoPersonagens.SetBool("isRun", false);
+                        _animacaoPersonagens.SetBool("isWalk", false);
+                        seMovendo = false;
+                    }
+
+                    if (i >= pontos.Length)
+                    {
+                        if (true)
+                            i = 0;
+                    }
+                }
             }
 
-            if (i >= pontos.Length)
-            {
-                if (loop)
-                    i = 0;
-                else
-                    seMovendo = false;
-            }
         }
     }
 
@@ -137,4 +209,9 @@ public class Enemy : MonoBehaviour {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, lookRadius);
     }
+
+    public override void AdicionarDano(int AdicionarDano) // Não Implementa
+    {
+    }
+
 }

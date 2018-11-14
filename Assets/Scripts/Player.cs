@@ -70,7 +70,7 @@ public class Player : Character
         for (int i = 0; i < enemiesToDamage.Length; i++)
         {
             //SE ELE TIVER NO RAIO VAI ATIRAR VIDA DO MOSTRO
-            enemiesToDamage[i].GetComponent<EnemyHealth>().TakeDamage(dano);
+            enemiesToDamage[i].GetComponent<Enemy>().ReceberDano(dano);
         }
         for (int i = 0; i < bossToDamage.Length; i++)
         {
@@ -135,6 +135,8 @@ public class Player : Character
         damaged = true;
         currentHealth -= ReceberDano;
         healthSlider.value = currentHealth;
+        if (ParticulaDeDano != null)
+            Instantiate(ParticulaDeDano, transform.position, Quaternion.identity);
         if (currentHealth <= 0 && !isDead)
         {
             Morte();
