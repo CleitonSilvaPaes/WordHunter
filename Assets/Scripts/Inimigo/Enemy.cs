@@ -74,8 +74,6 @@ public class Enemy : Character
 
     public override void ReceberDano(int ReceberDano) // Quanto de dano que vai levar dos ATAQUES DO PERSONAGEM
     {
-        if(ParticulaDeDano != null)
-            Instantiate(ParticulaDeDano, transform.position, Quaternion.identity);
         damaged = true;
         currentHealth -= ReceberDano;
         healthSlider.value = currentHealth;

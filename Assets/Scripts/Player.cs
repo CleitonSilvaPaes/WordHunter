@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class Player : Character
 {
+    public AudioSource _AudioAtaque;
     //Raio de alcance do Personagem
     public float attackRange;
     //Obejeto que se esta no raio e o Personagem atacar vai tirar dano
@@ -14,6 +15,7 @@ public class Player : Character
     public LayerMask whatIsEnemies;
     public LayerMask whatIsBoss;
 
+    float tempoAudioMovimento;
     public float velocidadePersonagem;
 
     private void Start()
@@ -37,7 +39,8 @@ public class Player : Character
 
     private void Update()
     {
-        if(currentHealth > 0)
+        tempoAudioMovimento -= Time.deltaTime;      
+        if (currentHealth > 0)
         {
             Mover();
             if (timeBtwAttack <= 0)
@@ -63,6 +66,9 @@ public class Player : Character
 
     protected override void Atacar()
     {
+        //AUDIO DE ATAQUE
+        _AudioAtaque.Play();
+          
         _animacaoPersonagens.SetTrigger("ataquePersonagem");
         //VAI PEGAR TODOS OS INIMIGOS QUE ENTRAR NO RAIO DE ATAQUE DO PLAYER
         Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
@@ -108,6 +114,12 @@ public class Player : Character
         if (horizontal != 0 || vertical != 0)
         {
             _animacaoPersonagens.SetBool("seMovendo", true);
+            
+            if(tempoAudioMovimento <= 0)
+            {
+                audio.Play();
+                tempoAudioMovimento = 0.25f;
+            }
         }
         else
         {
@@ -135,8 +147,6 @@ public class Player : Character
         damaged = true;
         currentHealth -= ReceberDano;
         healthSlider.value = currentHealth;
-        if (ParticulaDeDano != null)
-            Instantiate(ParticulaDeDano, transform.position, Quaternion.identity);
         if (currentHealth <= 0 && !isDead)
         {
             Morte();
