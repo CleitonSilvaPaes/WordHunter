@@ -67,8 +67,9 @@ public class Player : Character
     protected override void Atacar()
     {
         //AUDIO DE ATAQUE
-        _AudioAtaque.Play();
-          
+       if(_AudioAtaque != null)
+            _AudioAtaque.Play();
+
         _animacaoPersonagens.SetTrigger("ataquePersonagem");
         //VAI PEGAR TODOS OS INIMIGOS QUE ENTRAR NO RAIO DE ATAQUE DO PLAYER
         Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);

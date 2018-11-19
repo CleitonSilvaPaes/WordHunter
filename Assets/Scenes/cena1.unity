@@ -1925,7 +1925,7 @@ MonoBehaviour:
   dano: 3
   limiteMinimoY: -4.06
   limiteMaximoY: -2.19
-  _AudioAtaque: {fileID: 0}
+  _AudioAtaque: {fileID: 1433576779}
   attackRange: 1.18
   attackPos: {fileID: 1433576778}
   whatIsEnemies:
@@ -6039,7 +6039,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: deb12abd94eb03b44aa2d653f9cd292f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

@@ -20,7 +20,7 @@ public class Enemy : Character
     CapsuleCollider2D capsuleCollider;
     Player player; // Referencia a vida do Personagem
     float timer;
-
+    bool itemEntreque = false;
 
     void Awake()
     {
@@ -89,6 +89,7 @@ public class Enemy : Character
 
         if (player.currentHealth > 0)
         {
+            audio.Play();
             _animacaoPersonagens.SetTrigger("ataque");
         }
     }
@@ -102,10 +103,14 @@ public class Enemy : Character
 
         if (items.Length > 0)
         {
-            GameObject item = items[UnityEngine.Random.Range(0, items.Length)];
-            item.GetComponent<SpriteRenderer>().sortingOrder = 12;
-            Vector2 playerPos = new Vector2(_personagen.transform.position.x + 2, _personagen.transform.position.y);
-            Instantiate(item.transform, playerPos, Quaternion.identity);
+           if(itemEntreque == false)
+            {
+                GameObject item = items[UnityEngine.Random.Range(0, items.Length)];
+                item.GetComponent<SpriteRenderer>().sortingOrder = 12;
+                Vector2 playerPos = new Vector2(_personagen.transform.position.x + 2, _personagen.transform.position.y);
+                Instantiate(item.transform, playerPos, Quaternion.identity);
+                itemEntreque = true;
+            }
         }
 
         // Tell the animator that the enemy is dead.
