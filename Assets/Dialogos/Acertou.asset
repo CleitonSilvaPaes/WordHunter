@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Name: Acertou
   m_EditorClassIdentifier: 
   fala: Muito Bem!
+  items:
+  - {fileID: 1231851839780776, guid: c33bda6b71290014dad5320a5ac52fea, type: 2}
   resposta: []

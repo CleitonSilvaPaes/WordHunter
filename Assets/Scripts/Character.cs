@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public abstract class Character : MonoBehaviour {
     public Animator _animacaoPersonagens;
+#pragma warning disable CS0108 // O membro oculta o membro herdado; nova palavra-chave ausente
     public AudioSource audio;
+#pragma warning restore CS0108 // O membro oculta o membro herdado; nova palavra-chave ausente
     protected Rigidbody2D rBody;
     [Header("Vida")]
     public int startingHealth;

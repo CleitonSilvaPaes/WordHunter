@@ -119,7 +119,7 @@ public class Player : Character
             if(tempoAudioMovimento <= 0)
             {
                 audio.Play();
-                tempoAudioMovimento = 0.25f;
+                tempoAudioMovimento = 0.4f;
             }
         }
         else
